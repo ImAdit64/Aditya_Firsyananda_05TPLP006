@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Manajemen Karyawan</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="d-flex" id="wrapper">
+    <div class="bg-sidebar" id="sidebar-wrapper">
+        <div class="sidebar-heading text-gray py-4">
+            <img src="img/logounpam2.png" class="rounded-circle mr-2" alt="Logo">
+            Universitas Pamulang
+        </div>
+        <div class="list-group list-group-flush">
+            <div class="user-info px-3 py-2 text-center">
+                <div class="user-name text-blue">Welcome, Aditya Firsyananda</div>
+                <small class="user-role text-muted">Administrator</small>
+            </div>
+
+            <a href="#dashboard" class="list-group-item list-group-item-action active">Dashboard</a>
+            
+            <div class="menu-section">Menu Karyawan</div>
+            <a href="#karyawan" class="list-group-item list-group-item-action">Karyawan</a>
+            <a href="#jabatan" class="list-group-item list-group-item-action">Jabatan</a>
+            <a href="#divisi" class="list-group-item list-group-item-action">Divisi</a>
+
+            <div class="menu-section">Menu Absensi</div>
+            <a href="#absensi" class="list-group-item list-group-item-action">Absensi</a>
+            <a href="#izin" class="list-group-item list-group-item-action">Izin</a>
+            <a href="#lembur" class="list-group-item list-group-item-action">Lembur</a>
+
+        </div>
+    </div>
+
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+            <button class="btn btn-primary" id="menu-toggle"><span class="navbar-toggler-icon"></span></button>
+            <div class="ml-auto">
+                <img src="img/logounpam (1).png" class="rounded-circle" alt="User Avatar">
+            </div>
+        </nav>
+
+        <div class="container-fluid mt-4" id="main-content">
+            <h2 class="dashboard-title">Sistem Informasi Manajemen Karyawan</h2>
+            <h4 class="dashboard-subtitle">Admin Dashboard</h4>
+            <div class="row mt-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card info-box bg-blue">
+                        <div class="card-body">
+                            <div class="info-box-icon"><i class="fas fa-users"></i></div>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Data Pegawai</span>
+                                <span class="info-box-number">10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card info-box bg-green">
+                        <div class="card-body">
+                            <div class="info-box-icon"><i class="fas fa-calendar-check"></i></div>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Absensi Hari Ini</span>
+                                <span class="info-box-number">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card info-box bg-light-blue">
+                        <div class="card-body">
+                            <div class="info-box-icon"><i class="fas fa-clock"></i></div>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Konfirmasi Izin</span>
+                                <span class="info-box-number">4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card info-box bg-purple">
+                        <div class="card-body">
+                            <div class="info-box-icon"><i class="fas fa-business-time"></i></div>
+                            <div class="info-box-content">
+                                <span class="info-box-text">Konfirmasi Lembur</span>
+                                <span class="info-box-number">10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

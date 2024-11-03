@@ -1,0 +1,162 @@
+body {
+    background-color: #f8f9fa;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    background-color: #ffffff; 
+    color: #333; 
+}
+
+#sidebar-wrapper .sidebar-heading {
+    background-color: #3498DB; 
+    color: white; 
+    padding: 15px; 
+}
+
+.list-group-item {
+    color: #333; 
+    background-color: #ffffff; 
+    border: none;
+    padding: 8px 10px; 
+    border-radius: 0.5rem; 
+    margin: 5px 0; 
+}
+
+.list-group-item:hover, .list-group-item.active {
+    background-color: #3498DB; 
+    color: white; 
+}
+
+.menu-section {
+    color: #adb5bd;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 10px 10px; 
+    background-color: #ffffff; 
+    border-top: 1px solid #444;
+    margin-top: 20px; 
+}
+
+
+#sidebar-wrapper .user-info {
+    padding: 15px; 
+    margin-bottom: 25px; 
+}
+
+
+.list-group-flush .list-group-item + .menu-section {
+    margin-top: 10px;
+}
+
+
+#page-content-wrapper {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    transition: all 0.3s ease;
+    background: linear-gradient(to bottom, #3498DB 0%, #ffffff 50%); 
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    margin-left: 0;
+    width: 100%;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 130px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    background-color: #3498DB; 
+    margin-bottom: 20px; 
+}
+
+.info-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.info-box-text {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.info-box-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.bg-blue { background-color: #3498DB; }
+.bg-green { background-color: #28A745; }
+.bg-light-blue { background-color: #5DADE2; }
+.bg-purple { background-color: #8E44AD; }
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: -250px; 
+}
+
+.btn {
+    color: rgb(0, 0, 0);
+    background-color: #b9b0b0;
+    border: none;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px; 
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.search-input {
+    width: 200px; 
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+#addKaryawanButton {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.pagination-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
